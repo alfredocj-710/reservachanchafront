@@ -1,0 +1,7 @@
+﻿@page "/"
+@layout BlazorApp1.Components.Layout.EmptyLayout
+@inject NavigationManager Nav
+
+@code {
+    protected override void OnInitialized() => Nav.NavigateTo("/dashboard", replace: true);
+}
